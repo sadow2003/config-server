@@ -1,4 +1,4 @@
-EUREKA: 
- CLIENT: 
-   REGISTER-WITH-EUREKA: FALSE 
-   FETCH-REGISTRY: FALSE 
+eureka: 
+ client: 
+   register-with-eureka: false 
+   fetch-registry: false 
