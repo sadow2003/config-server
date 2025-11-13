@@ -21,4 +21,25 @@ jpa:
 h2:
   console:
     enabled: true
+
     path: /h2-console
+eureka: 
+ instance: 
+   prefer-ip-address: true 
+   instance-id: 
+${spring.application.name}-${spring.profiles.active}-${server.por
+ t} 
+ client: 
+   service-url: 
+     default-zone: http://localhost:8761 
+   register-with-eureka: true 
+   fetch-registry: true 
+ 
+management: 
+ endpoints: 
+   web: 
+     exposure: 
+       include: "*" 
+ endpoint: 
+   health: 
+     show-details: always 
