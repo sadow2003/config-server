@@ -26,11 +26,11 @@ eureka:
   instance:
     prefer-ip-address: true
     instance-id: ${spring.application.name}-${spring.profiles.active}-${server.port}
-client:
-  service-url:
-    default-zone: http://localhost:8761
-  register-with-eureka: true
-  fetch-registry: true
+  client:
+    service-url:
+      default-zone: http://localhost:8761
+    register-with-eureka: true
+    fetch-registry: true
 
 management:
   endpoints:
@@ -40,6 +40,7 @@ management:
   endpoint:
     health:
       show-details: always 
+
 
 
 
