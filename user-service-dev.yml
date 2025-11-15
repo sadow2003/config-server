@@ -1,17 +1,15 @@
 logging:
   level:
     org.springframework: INFO
-    ma.gov.pfe: DEBUG
-    reactor.netty: DEBUG
-    reactor.core: DEBUG
-    org.springframework.web.reactive: DEBUG
+    ma.emsi.zougagh: DEBUG
+    
 spring:
   datasource:
     driver-class-name: org.h2.Driver
     url: jdbc:h2:file:~/user-db-${spring.profiles.active}-${server.port}
-serverName : localhost
-username: sa
-password : password
+    serverName : localhost
+    username: sa
+    password : password
 
 jpa:
   generate-ddl: true
@@ -40,6 +38,7 @@ management:
   endpoint:
     health:
       show-details: always 
+
 
 
 
